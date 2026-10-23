@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="618.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hardware.controller.StockController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="593.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefHeight="619.0" prefWidth="1223.0">
+               <children>
+                  <HBox prefHeight="58.0" prefWidth="602.0" styleClass="my-hbox">
+                     <children>
+                        <Label text="Filter by product:" />
+                        <ComboBox prefHeight="47.0" prefWidth="185.0" promptText="All products" />
+                     </children>
+                  </HBox>
+                  <TableView prefHeight="553.0" prefWidth="1223.0">
+                    <columns>
+                      <TableColumn prefWidth="129.0" text="PRODUCT" />
+                      <TableColumn prefWidth="156.0" text="MOVEMENT TYPE" />
+                        <TableColumn minWidth="0.0" prefWidth="124.0" text="REFERENCE" />
+                        <TableColumn minWidth="5.0" prefWidth="102.0" text="CHANGE" />
+                        <TableColumn minWidth="0.0" prefWidth="103.0" text="BEFORE" />
+                        <TableColumn minWidth="0.0" prefWidth="92.0" text="AFTER" />
+                        <TableColumn minWidth="0.0" prefWidth="159.0" text="BY" />
+                        <TableColumn minWidth="0.0" prefWidth="136.0" text="DATE" />
+                        <TableColumn minWidth="0.0" prefWidth="221.0" text="NOTES" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/box.css" />
+      <URL value="@../css/table.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="607.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefHeight="608.0" prefWidth="737.0">
+               <children>
+                  <HBox prefHeight="69.0" prefWidth="600.0" styleClass="my-hbox">
+                     <children>
+                        <VBox prefHeight="69.0" prefWidth="392.0" styleClass="kpi-tile">
+                           <children>
+                              <Label styleClass="page-title" text="TOTAL OUTSTANDING CREDIT" />
+                              <Label text="UGX 0">
+                                 <styleClass>
+                                    <String fx:value="value" />
+                                    <String fx:value="value-warning" />
+                                 </styleClass></Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="87.0" prefWidth="411.0" styleClass="kpi-tile">
+                           <children>
+                              <Label styleClass="page-title" text="CUSTOMERS WITH DEBT" />
+                              <Label text="0">
+                                 <styleClass>
+                                    <String fx:value="value" />
+                                    <String fx:value="value-warning" />
+                                 </styleClass></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label styleClass="page-title" text="DEBTORS" />
+                  <TableView prefHeight="522.0" prefWidth="737.0">
+                    <columns>
+                      <TableColumn prefWidth="142.0" text="CUSTOMERS" />
+                      <TableColumn prefWidth="203.0" text="PHONE" />
+                        <TableColumn prefWidth="194.0" text="CREDIT LIMIT" />
+                        <TableColumn prefWidth="197.0" text="OUTSTANDING BALANCE" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/table.css" />
+      <URL value="@../css/box.css" />
+   </stylesheets>
+</AnchorPane>

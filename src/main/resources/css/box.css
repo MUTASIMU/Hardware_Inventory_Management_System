@@ -1,0 +1,15 @@
+.my-vbox{
+    -fx-spacing: 15px;
+    -fx-padding: 5px;
+}
+.my-hbox{
+    -fx-spacing: 15px;
+    -fx-padding: 10px;
+}
+.min{
+    -fx-pref-width: 150px;
+
+}
+.menu-button > .label{
+    -fx-alignment: CENTER;
+}

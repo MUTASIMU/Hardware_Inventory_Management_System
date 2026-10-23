@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="685.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane hbarPolicy="ALWAYS" layoutY="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="990.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefHeight="685.0" prefWidth="990.0" styleClass="card">
+               <children>
+                  <HBox prefHeight="87.0" prefWidth="943.0" styleClass="my-hbox">
+                     <children>
+                        <VBox prefHeight="88.0" prefWidth="162.0" styleClass="kpi-tile">
+                           <children>
+                              <Label styleClass="empty-state-label" text="TODAY'S SALES" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="88.0" prefWidth="215.0" styleClass="kpi-tile">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="161.0" styleClass="empty-state-label" text="TODAY'S PURCHASES" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="85.0" prefWidth="337.0" styleClass="kpi-tile">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="293.0" styleClass="empty-state-label" text="TODAY'S EXPENSES" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="93.0" prefWidth="730.0" styleClass="my-hbox">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="154.0" styleClass="kpi-tile">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="130.0" styleClass="empty-state-label" text="LOW STOCK ITEMS" />
+                              <Label styleClass="value" text="0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="85.0" prefWidth="191.0" styleClass="kpi-tile">
+                           <children>
+                              <Label styleClass="empty-state-label" text="OUT OF STOCK" />
+                              <Label styleClass="value" text="0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="92.0" prefWidth="338.0" styleClass="kpi-tile">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="333.0" styleClass="empty-state-label" text="OUTSTANDING CREDIT" />
+                              <Label styleClass="value" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="459.0" prefWidth="950.0" styleClass="my-hbox">
+                     <children>
+                        <VBox prefHeight="449.0" prefWidth="491.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="188.0" styleClass="empty-state-label" text="LOW STOCK PRODUCTS" />
+                              <TableView prefHeight="444.0" prefWidth="434.0">
+                                <columns>
+                                  <TableColumn prefWidth="57.0" styleClass="label" text="SKU" />
+                                  <TableColumn prefWidth="112.0" styleClass="label" text="PRODUCT" />
+                                    <TableColumn prefWidth="110.0" styleClass="label" text="STOCK" />
+                                    <TableColumn prefWidth="181.0" styleClass="label" text="REORDER LEVEL" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="393.0" prefWidth="528.0">
+                           <children>
+                              <Label styleClass="empty-state-label" text="OUT OF STOCK PRODUCTS" />
+                              <TableView prefHeight="444.0" prefWidth="516.0">
+                                <columns>
+                                  <TableColumn prefWidth="106.0" text="SKU" />
+                                  <TableColumn prefWidth="181.0" styleClass="label" text="PRODUCT" />
+                                    <TableColumn prefWidth="187.0" styleClass="label" text="CATEGORY" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/table.css" />
+      <URL value="@../css/box.css" />
+   </stylesheets>
+</AnchorPane>

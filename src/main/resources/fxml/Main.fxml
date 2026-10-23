@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="461.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hardware.controller.MainShellController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="275.0" prefWidth="135.0" styleClass="my-vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="69.0" prefWidth="542.0" styleClass="topbar">
+               <children>
+                  <Label styleClass="page-title" text="HARDWARE &amp; BUSINESS MANAGEMENNT" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" text="MAIN">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Dashboard" />
+              </items>
+               <styleClass>
+                  <String fx:value="min" />
+                  <String fx:value="menu-button" />
+               </styleClass>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="min" text="CATALOG">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Products" />
+                <MenuItem mnemonicParsing="false" text="Categories" />
+                  <MenuItem mnemonicParsing="false" text="Units" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="min" text="PARTNERS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Suppliers" />
+                <MenuItem mnemonicParsing="false" text="Customers" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="min" text="OPERATIONS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Purchasing" />
+                <MenuItem mnemonicParsing="false" text="Point of Sale" />
+                  <MenuItem mnemonicParsing="false" text="Sales History" />
+                  <MenuItem mnemonicParsing="false" text="Customer Payments" />
+                  <MenuItem mnemonicParsing="false" text="Debtor Management" />
+                  <MenuItem mnemonicParsing="false" text="Inventory / Stock" />
+                  <MenuItem mnemonicParsing="false" text="Stock Adjustments" />
+                  <MenuItem mnemonicParsing="false" text="Expenses" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="min" text="INSIGHTS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Reports" />
+                <MenuItem mnemonicParsing="false" text="Aduit Logs" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="min" text="ADMIN">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Users &amp; Roles" />
+                <MenuItem mnemonicParsing="false" text="Settings" />
+              </items>
+            </MenuButton>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/box.css" />
+   </stylesheets>
+</AnchorPane>

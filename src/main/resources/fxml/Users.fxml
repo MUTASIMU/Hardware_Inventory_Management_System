@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="736.0" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="-8.0" layoutY="-7.0" prefHeight="418.0" prefWidth="618.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TabPane prefHeight="534.0" prefWidth="737.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="USERS">
+                     <content>
+                        <VBox prefHeight="378.0" prefWidth="575.0">
+                           <children>
+                              <VBox prefHeight="506.0" prefWidth="737.0">
+                                 <children>
+                                    <ButtonBar prefHeight="61.0" prefWidth="606.0">
+                                      <buttons>
+                                        <Button mnemonicParsing="false" styleClass="btn-accent" text="+NEW USER" />
+                                      </buttons>
+                                    </ButtonBar>
+                                    <TableView prefHeight="442.0" prefWidth="737.0" stylesheets="@../css/table.css">
+                                      <columns>
+                                        <TableColumn prefWidth="197.0" text="FULL NAME" />
+                                        <TableColumn minWidth="0.0" prefWidth="152.0" text="USER NAME" />
+                                          <TableColumn minWidth="0.0" prefWidth="141.0" text="ROLE" />
+                                          <TableColumn minWidth="0.0" prefWidth="0.0" text="EMAIL" />
+                                          <TableColumn minWidth="3.0" prefWidth="141.0" text="STATUS" />
+                                          <TableColumn minWidth="0.0" prefWidth="105.0" text="ACTIONS" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                <Tab text="ROLES &amp; PERMISSIONS">
+                     <content>
+                        <HBox prefHeight="392.0" prefWidth="606.0">
+                           <children>
+                              <HBox prefHeight="503.0" prefWidth="733.0" styleClass="card" stylesheets="@../css/table.css">
+                                 <children>
+                                    <VBox prefHeight="362.0" prefWidth="242.0">
+                                       <children>
+                                          <Label styleClass="page-title" text="ROLES" />
+                                          <TableView prefHeight="456.0" prefWidth="239.0">
+                                            <columns>
+                                              <TableColumn prefWidth="241.0" text="ROLE" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="467.0" prefWidth="441.0">
+                                       <children>
+                                          <Label styleClass="page-title" text="PERMISSIONS" />
+                                          <TableView prefHeight="458.0" prefWidth="439.0">
+                                            <columns>
+                                              <TableColumn prefWidth="157.0" text="MODULE" />
+                                              <TableColumn prefWidth="127.0" text="PERMISSION" />
+                                                <TableColumn prefWidth="154.0" text="GRANTED" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

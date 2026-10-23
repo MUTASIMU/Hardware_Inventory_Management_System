@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="647.0" prefWidth="1379.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane>
+               <children>
+                  <TabPane layoutY="141.0" prefHeight="505.0" prefWidth="1403.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="LOW STOCK">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <TableView layoutY="1.0" prefHeight="488.0" prefWidth="1403.0">
+                                      <columns>
+                                        <TableColumn prefWidth="233.0" text="SKU" />
+                                        <TableColumn prefWidth="531.0" text="PRODUCT" />
+                                          <TableColumn prefWidth="605.0" text="REORDER LEVEL" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="OUT OF STOCK">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="1380.0">
+                                 <children>
+                                    <TableView layoutX="-22.0" prefHeight="491.0" prefWidth="1424.0">
+                                      <columns>
+                                        <TableColumn prefWidth="269.0" text="SKU" />
+                                        <TableColumn prefWidth="532.0" text="PRODUCT" />
+                                          <TableColumn prefWidth="458.0" text="CATEGORY" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="INVENTORY VALUATION">
+                          <content>
+                            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="1380.0">
+                                 <children>
+                                    <TableView layoutY="-1.0" prefHeight="493.0" prefWidth="1403.0">
+                                      <columns>
+                                        <TableColumn prefWidth="142.0" text="SKU" />
+                                        <TableColumn prefWidth="252.0" text="PRODUCT" />
+                                          <TableColumn prefWidth="237.0" text="STOCK" />
+                                          <TableColumn prefWidth="352.0" text="COST PRICE" />
+                                          <TableColumn prefWidth="380.0" text="STOCK VALUE (COST)" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  <HBox prefHeight="141.0" prefWidth="1403.0" styleClass="topbar">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="38.0" text="From:" />
+                        <DatePicker />
+                        <Label prefHeight="17.0" prefWidth="20.0" text="To" />
+                        <DatePicker />
+                        <VBox prefHeight="116.0" prefWidth="185.0" styleClass="card">
+                           <children>
+                              <Label text="Reports" />
+                              <MenuButton mnemonicParsing="false" popupSide="RIGHT" text="RUN REPORT">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="DAILY" />
+                                  <MenuItem mnemonicParsing="false" text="WEEKLY" />
+                                    <MenuItem mnemonicParsing="false" text="MONTHLY" />
+                                    <MenuItem mnemonicParsing="false" text="ANNUALLY" />
+                                </items>
+                              </MenuButton>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="116.0" prefWidth="150.0" styleClass="card">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="112.0" styleClass="page-title" text="TOTAL SALES" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="116.0" prefWidth="180.0" styleClass="card">
+                           <children>
+                              <Label styleClass="page-title" text="TOTAL EXPENSES" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="116.0" prefWidth="251.0" styleClass="card">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="231.0" styleClass="page-title" text="EST.NET (SALES - EXPENSES)" />
+                              <Label styleClass="value" text="UGX 0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/table.css" />
+   </stylesheets>
+</AnchorPane>

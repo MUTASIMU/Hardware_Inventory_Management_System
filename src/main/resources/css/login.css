@@ -1,0 +1,9 @@
+.text-field{
+    -fx-pref-width: 320px;
+    -fx-max-width: 320px;
+    -fx-pref-height: 320px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-padding: 0px 20px;
+    -fx-alignment: center-left;
+}

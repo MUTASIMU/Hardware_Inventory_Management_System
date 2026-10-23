@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="777.0" prefWidth="1229.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hardware.controller.PurchaseController">
+   <children>
+      <ScrollPane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <HBox prefHeight="773.0" prefWidth="1227.0" styleClass="card">
+               <children>
+                  <VBox prefHeight="737.0" prefWidth="580.0" styleClass="my-vbox">
+                     <children>
+                        <Label styleClass="page-title" text="NEW PURCHASE" />
+                        <Label text="Supplier" />
+                        <ComboBox prefHeight="25.0" prefWidth="302.0" />
+                        <Label text="Add Product Line" />
+                        <HBox prefHeight="33.0" prefWidth="301.0" styleClass="my-hbox">
+                           <children>
+                              <ChoiceBox prefHeight="47.0" prefWidth="151.0" styleClass="combo-box" />
+                              <TextField prefHeight="39.0" prefWidth="72.0" text="Qty" />
+                              <TextField prefHeight="39.0" prefWidth="97.0" text="Unit Cost" />
+                              <Button mnemonicParsing="false" styleClass="btn-primary" text="Add" />
+                           </children>
+                        </HBox>
+                        <TableView prefHeight="251.0" prefWidth="318.0">
+                          <columns>
+                            <TableColumn prefWidth="90.0" text="PRODUCT" />
+                            <TableColumn prefWidth="93.0" text="QTY" />
+                              <TableColumn prefWidth="132.0" text="UNIT COST" />
+                              <TableColumn prefWidth="183.0" text="TOTAL" />
+                          </columns>
+                        </TableView>
+                        <VBox prefHeight="123.0" prefWidth="499.0" styleClass="my-vbox">
+                           <children>
+                              <Label text="Discount :" />
+                              <TextField text="0" />
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="47.0" prefWidth="499.0" styleClass="my-hbox">
+                           <children>
+                              <Label text="Total :" />
+                              <Label styleClass="amount" text="UGX 0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="27.0" prefWidth="301.0" styleClass="my-hbox">
+                           <children>
+                              <Label text="Notes:" />
+                              <TextArea prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <ButtonBar prefHeight="27.0" prefWidth="301.0">
+                          <buttons>
+                              <Button mnemonicParsing="false" styleClass="btn-danger" text="CANCEL" />
+                            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="310.0" styleClass="btn-primary" text="Confirm Purchase" />
+                          </buttons>
+                        </ButtonBar>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="737.0" prefWidth="734.0">
+                     <children>
+                        <Label styleClass="page-title" text="RECENT PURCHASES" />
+                        <TableView prefHeight="722.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn prefWidth="106.0" text="PURCHASE NO" />
+                            <TableColumn prefWidth="79.0" text="SUPPLIER" />
+                              <TableColumn prefWidth="97.0" text="DATE" />
+                              <TableColumn prefWidth="114.0" text="TOTAL" />
+                              <TableColumn prefWidth="132.0" text="STATUS" />
+                              <TableColumn prefWidth="134.0" text="RECORDED BY" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../css/table.css" />
+      <URL value="@../css/box.css" />
+   </stylesheets>
+</AnchorPane>
