@@ -17,6 +17,7 @@
         <mysql.version>9.1.0</mysql.version>
         <javafx.version>21.0.2</javafx.version>
         <controlsfx.version>11.2.1</controlsfx.version>
+        <jbcrypt.version>0.4</jbcrypt.version>
     </properties>
 
     <dependencies>
@@ -76,6 +77,12 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>${mysql.version}</version>
+        </dependency>
+        <!-- BCrypt -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>${jbcrypt.version}</version>
         </dependency>
 
     </dependencies>
