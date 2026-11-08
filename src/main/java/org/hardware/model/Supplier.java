@@ -1,4 +1,39 @@
 package org.hardware.model;
 
+import java.time.LocalDateTime;
+
 public class Supplier {
+    private int supplierId;
+    private String supplierName;
+    private String contactPerson;
+    private String phone;
+    private String email;
+    private String address;
+    private String tinNumber;
+    private boolean active;
+    private LocalDateTime createdAt;
+
+    public Supplier() {}
+
+    public int getSupplierId() { return supplierId; }
+    public void setSupplierId(int supplierId) { this.supplierId = supplierId; }
+    public String getSupplierName() { return supplierName; }
+    public void setSupplierName(String supplierName) { this.supplierName = supplierName; }
+    public String getContactPerson() { return contactPerson; }
+    public void setContactPerson(String contactPerson) { this.contactPerson = contactPerson; }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+    public String getTinNumber() { return tinNumber; }
+    public void setTinNumber(String tinNumber) { this.tinNumber = tinNumber; }
+    public boolean isActive() { return active; }
+    public void setActive(boolean active) { this.active = active; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+
+    @Override
+    public String toString() { return supplierName; }
 }
